@@ -1,0 +1,30 @@
+{
+    "/user-service/": {
+        "target": "http://localhost:8080/user-service/",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": {"^/user-service" : ""}
+    },
+    "/student-user-service/*": {
+        "target": "http://localhost:8080/student-user-service/",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": {"^/student-user-service" : ""}
+    },
+    "/admin-user-service/*": {
+        "target": "http://localhost:8080/admin-user-service/",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": {"^/admin-user-service" : ""}
+    },
+    "/trainer-user-service/*": {
+        "target": "http://localhost:8080/trainer-user-service/",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": {"^/trainer-user-service" : ""}
+    }
+}

@@ -1,0 +1,85 @@
+server:
+    port: 8080
+spring:
+    application:
+        name: api-gateway-service   
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+ribbon:
+  ReadTimeout: 60000
+  connection-timeout: 60000
+  eureka:
+    enabled: true
+
+eureka:
+    client:
+        registerWithEureka: true
+        fetchRegistry: true
+        serviceUrl:
+            defaultZone: http://localhost:8761/eureka
+zuul:
+    host:
+        connect-timeout-millis: 6000
+        socket-timeout-millis: 10000
+        max-per-route-connections: 20
+        max-total-connections: 200
+        # time-to-live: 
+    routes:
+        admin-user-service:
+            path: /admin-user-service/
+            service-id: admin-user-service
+            strip-prefix: true
+        student-user-service:
+            path: /student-user-service/
+            service-id: student-user-service
+            strip-prefix: true
+        trainer-user-service:
+            path: /trainer-user-service/
+            service-id: trainer-user-service
+            strip-prefix: true
+        user-service:
+            path: /user-service/
+            service-id: user-service
+            strip-prefix: true
+        batch-course-service:
+            path: /batch-course-service/
+            service-id: batch-course-service
+            strip-prefix: true
+        course-service:
+            path: /course-service/
+            service-id: course-service
+            strip-prefix: true
+        feedback-service:
+            path: /feedback-service/
+            service-id: feedback-service
+            strip-prefix: true
+        login-service:
+            path: /login-service/
+            service-id: login-service
+            strip-prefix: true
+        program-course-service:
+            path: /program-course-service/
+            service-id: program-course-service
+            strip-prefix: true
+        program-service:
+            path: /program-service/
+            service-id: program-service
+            strip-prefix: true
+        student-service:
+            path: /student-service/
+            service-id: student-service
+            strip-prefix: true
+        trainer-service:
+            path: /trainer-service/
+            service-id: trainer-service
+            strip-prefix: true
+        trainer-program-service:
+            path: /trainer-program-service/
+            service-id: trainer-program-service
+            strip-prefix: true

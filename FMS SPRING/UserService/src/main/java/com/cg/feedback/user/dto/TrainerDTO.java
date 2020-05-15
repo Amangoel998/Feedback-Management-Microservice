@@ -1,0 +1,70 @@
+package com.cg.feedback.user.dto;
+
+public class TrainerDTO {
+
+	private String trainerId;
+	private String trainerName;
+	private String trainerSkills;
+	private String trainerEmail;
+
+	// constructor
+	public TrainerDTO() {
+		super();
+	}
+	public TrainerDTO(String trainerId, String trainerName, String skills, String trainerEmail) {
+		super();
+		this.trainerId = trainerId;
+		this.trainerName = trainerName;
+		this.trainerSkills = skills;
+		this.trainerEmail = trainerEmail;
+	}
+	public TrainerDTO(NewTrainerDTO trainer){
+		super();
+		this.trainerId = trainer.getTrainerId();
+		this.trainerEmail = trainer.getTrainerEmail();
+		this.trainerName = trainer.getTrainerName();
+		this.trainerSkills = trainer.getTrainerSkills();
+	}
+
+	// Getters and Setters
+	public String getTrainerId() {
+		return trainerId;
+	}
+
+	public void setTrainerId(String trainerId) {
+		this.trainerId = trainerId;
+	}
+
+	public String getTrainerName() {
+		return trainerName;
+	}
+
+	public void setTrainerName(String trainerName) {
+		this.trainerName = trainerName;
+	}
+
+	public String getTrainerEmail() {
+		return trainerEmail;
+	}
+
+	public void setTrainerEmail(String trainerEmail) {
+		this.trainerEmail = trainerEmail;
+	}
+
+	public String getTrainerSkills() {
+		return trainerSkills;
+	}
+
+	public void setTrainerSkills(String trainerSkills) {
+		this.trainerSkills = trainerSkills;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		TrainerDTO temp = (TrainerDTO) obj;
+		if (temp.getTrainerEmail().equals(this.trainerEmail))
+			return true;
+		return false;
+	}
+
+}

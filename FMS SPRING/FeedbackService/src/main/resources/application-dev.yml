@@ -1,0 +1,29 @@
+server:
+    port: 8087
+
+#Eureka
+eureka:
+    client: 
+        serviceUrl:
+            defaultZone: http://localhost:8761/eureka
+
+# H2
+spring:
+    application:
+        name: feedback-service
+# Datasource
+    datasource:
+        url: jdbc:h2:file:~/feedback
+        username: sa
+        password: ''
+        driverClassName: org.h2.Driver
+    h2:
+        console:
+            enabled: true
+            path: '/h2'
+
+#looger
+logging:
+    level:
+        root: WARN
+        com.cg: INFO

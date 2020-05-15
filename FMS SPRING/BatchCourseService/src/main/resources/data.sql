@@ -1,0 +1,1 @@
+INSERT INTO batch_courses(batch,course_id) VALUES('A','CRS101'), ('B','CRS103');

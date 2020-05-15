@@ -1,0 +1,122 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AdminUserServiceApplication",
+            "request": "launch",
+            "mainClass": "com.cg.feedback.admin_user.AdminUserServiceApplication",
+            "projectName": "AdminService"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TrainerUserServiceApplication",
+            "request": "launch",
+            "mainClass": "com.cg.feedback.trainer_user.TrainerUserServiceApplication",
+            "projectName": "TrainerUserService"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StudentUserServiceApplication",
+            "request": "launch",
+            "mainClass": "com.cg.feedback.student_user.StudentUserServiceApplication",
+            "projectName": "StudentUserService"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BatchCourseServiceApplication",
+            "request": "launch",
+            "mainClass": "com.cg.feedback.batch_course.BatchCourseServiceApplication",
+            "projectName": "BatchCourseService"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ProgramServiceApplication",
+            "request": "launch",
+            "mainClass": "com.cg.feedback.program.ProgramServiceApplication",
+            "projectName": "ProgramService"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TrainerProgramServiceApplication",
+            "request": "launch",
+            "mainClass": "com.cg.feedback.trainer_program.TrainerProgramServiceApplication"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - UserServiceApplication",
+            "request": "launch",
+            "mainClass": "com.cg.feedback.user.UserServiceApplication"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ProgramCourseServiceApplication",
+            "request": "launch",
+            "mainClass": "com.cg.feedback.program_course.ProgramCourseServiceApplication"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FeedbackServiceApplication",
+            "request": "launch",
+            "mainClass": "com.cg.feedback.feedback.FeedbackServiceApplication",
+            "projectName": "FeedbackService"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LoginServiceApplication",
+            "request": "launch",
+            "mainClass": "com.cg.feedback.login.LoginServiceApplication",
+            "projectName": "LoginService"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ProgramServiceApplication",
+            "request": "launch",
+            "mainClass": "com.cg.feedback.program.ProgramServiceApplication",
+            "projectName": "ProductService"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CourseServiceApplication",
+            "request": "launch",
+            "mainClass": "com.cg.feedback.course.CourseServiceApplication",
+            "projectName": "CourseService"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BatchCourseServiceApplication",
+            "request": "launch",
+            "mainClass": "com.cg.feedback.batch_course.BatchCourseServiceApplication",
+            "projectName": "TrainerService"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TrainerServiceApplication",
+            "request": "launch",
+            "mainClass": "com.cg.feedback.trainer.TrainerServiceApplication"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ApiGatewayApplication",
+            "request": "launch",
+            "mainClass": "com.cg.feedback.apigateway.ApiGatewayApplication",
+            "projectName": "api-gateway"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - EurekaServerApplication",
+            "request": "launch",
+            "mainClass": "com.cg.sunhome.eurekaserver.EurekaServerApplication",
+            "projectName": "eureka-server"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-StudentServiceApplication<StudentService>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.cg.feedback.student.StudentServiceApplication",
+            "projectName": "StudentService",
+            "args": ""
+        }
+    ]
+}
