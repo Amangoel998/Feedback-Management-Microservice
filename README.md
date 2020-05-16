@@ -23,3 +23,14 @@ Following is a list of functionalities of the system. There are 3 types of users
   - View the Feedback Defaulters for itself.
 - Participants/ Students
   - Enter feedback for the training programs attended
+  
+## 4. Description
+- __Login Page__
+![Login Page](./images/LoginPage.png)
+- __Admin Dashboard__
+![Admin Page](./images/AdminDashboard.png)
+- __Trainer Dashboard__
+![Trainer Page](./images/TrainerDashboard.png)
+- __Student Dashboard__
+![Student Page](./images/StudentDashboard.png)
+
