@@ -17,9 +17,7 @@ public class CourseServiceApplication {
 		
 	
 	}
-	
-
-	
+		
 	@LoadBalanced
 	@Bean
 	public RestTemplate getRestTemplate() {

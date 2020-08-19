@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  mysql-db:
+    image: mysql:5.7
+    stdin_open: true
+    tty: true
+    environment:
+      MYSQL_ROOT_PASSWORD: P@ssword
+      MYSQL_DATABASE: testapp
+      MYSQL_USER: aman_developer
+      MYSQL_PASSWORD: Am@n1998
+    ports:
+    - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+  
+volumes:
+  mysql-data:
